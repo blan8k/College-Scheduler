@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/addClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/className"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/addAssignments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/assignmentName"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addClass"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/addDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="180dp"
+        android:text="@string/dueDate"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addAssignments"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/uClass"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="-12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/addClass"
+        app:layout_constraintTop_toTopOf="@+id/addClass" />
+
+    <EditText
+        android:id="@+id/uAssignment"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="-12dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/addAssignments"
+        app:layout_constraintTop_toTopOf="@+id/addAssignments" />
+
+    <EditText
+        android:id="@+id/uDueDate"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="-12dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textSize="23sp"
+        app:layout_constraintStart_toStartOf="@+id/addDueDate"
+        app:layout_constraintTop_toTopOf="@+id/addDueDate" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="50dp"
+        android:text="@string/save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

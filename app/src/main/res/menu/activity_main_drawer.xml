@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_assignment_24"
+            android:title="@string/menu_assignments" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/baseline_checklist_24"
+            android:title="@string/menu_toDo" />
+        <item
+            android:id="@+id/nav_exams"
+            android:icon="@drawable/ic_menu_exams"
+            android:title="@string/exams" />
+        <item
+            android:id="@+id/classDetails"
+            android:icon="@drawable/baseline_book_24"
+            android:title="@string/class_details" />
+
+    </group>
+</menu>

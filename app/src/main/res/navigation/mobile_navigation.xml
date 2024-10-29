@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.collegescheduler.ui.Assignments.Assignments"
+        android:label="@string/menu_assignments"
+        tools:layout="@layout/fragment_assignments" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.collegescheduler.ui.ToDo.ToDo"
+        android:label="@string/menu_toDo"
+        tools:layout="@layout/fragment_to_do" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.collegescheduler.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_exams"
+        android:name="com.example.collegescheduler.ui.exams.ExamsFragment"
+        android:label="@string/exams"
+        tools:layout="@layout/fragment_exams"/>
+    <action
+        android:id="@+id/action_examsFragment_to_addExamFragment"
+        app:destination="@id/addExamFragment" />
+
+    <fragment
+        android:id="@+id/addExamFragment"
+        android:name="com.example.collegescheduler.ui.exams.AddExamFragment"
+        android:label="Add Exam"/>
+
+    <activity
+        android:id="@+id/classDetails"
+        android:name="com.example.collegescheduler.ui.ClassDetails.ClassDetailsFragment"
+        android:label="@layout/classdetails" />
+</navigation>
